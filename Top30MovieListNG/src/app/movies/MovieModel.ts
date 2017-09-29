@@ -20,4 +20,5 @@ export class MoviePart {
     MovieName: string;
     Notes: string;
     IMDBUrl: string;
+    IMDBPosterUrl: string;
 }

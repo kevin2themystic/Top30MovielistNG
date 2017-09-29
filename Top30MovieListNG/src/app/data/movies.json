@@ -1,0 +1,66 @@
+{
+  "Movies": [
+    {
+      "SequenceNumber": 1,
+      "MovieName": "Lord of the Rings Trilogy",
+      "Notes": "",
+      "MovieParts": [
+        {
+          "MovieName": "Part I: The Fellowship of the Ring",
+          "Notes": "",
+          "IMDBUrl": "http://www.imdb.com/title/tt0120737/?ref_=nv_sr_1",
+          "IMDBPosterUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_UX182_CR0,0,182,268_AL_.jpg"
+        },
+        {
+          "MovieName": "Part II: The Two Towers",
+          "Notes": "",
+          "IMDBUrl": "http://www.imdb.com/title/tt0167261/?ref_=nv_sr_1",
+          "IMDBPosterUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMDY0NmI4ZjctN2VhZS00YzExLTkyZGItMTJhOTU5NTg4MDU4XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UY268_CR1,0,182,268_AL_.jpg"
+        },
+        {
+          "MovieName": "Part III: The Return of the King",
+          "Notes": "",
+          "IMDBUrl": "http://www.imdb.com/title/tt0167260/?ref_=nv_sr_1",
+          "IMDBPosterUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BYWY1ZWQ5YjMtMDE0MS00NWIzLWE1M2YtODYzYTk2OTNlYWZmXkEyXkFqcGdeQXVyNDUyOTg3Njg@._V1_UX182_CR0,0,182,268_AL_.jpg"
+        }
+      ],
+      "IMDBUrl": "",
+      "IMDBPosterUrl": ""
+    },
+    {
+      "SequenceNumber": 2,
+      "MovieName": "The Matrix Trilogy",
+      "Notes": "",
+      "MovieParts": [
+        {
+          "MovieName": "",
+          "Notes": "",
+          "IMDBUrl": "",
+          "IMDBPosterUrl": ""
+        },
+        {
+          "MovieName": "",
+          "Notes": "",
+          "IMDBUrl": "",
+          "IMDBPosterUrl": ""
+        },
+        {
+          "MovieName": "",
+          "Notes": "",
+          "IMDBUrl": "",
+          "IMDBPosterUrl": ""
+        }
+      ],
+      "IMDBUrl": "",
+      "IMDBPosterUrl": ""
+    },
+    {
+      "SequenceNumber": 3,
+      "MovieName": "The Thin Red Line",
+      "Notes": "",
+      "MovieParts": [],
+      "IMDBUrl": "",
+      "IMDBPosterUrl": ""
+    }
+  ]
+}
