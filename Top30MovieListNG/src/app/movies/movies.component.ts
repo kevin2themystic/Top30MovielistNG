@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from "rxjs/Observable";
 import { Movie } from './MovieModel';
 import { MoviePart } from './MovieModel'; 
 import { MoviesService } from './movies.service';
@@ -9,21 +10,17 @@ import { MoviesService } from './movies.service';
   styleUrls: ['./movies.component.css'],
   providers: [MoviesService]
 })
-export class MoviesComponent implements OnInit {
-
-  Movies: Array<Movie> = new Array<Movie>();
+export class MoviesComponent implements OnInit {  
 
   constructor(private moviesService: MoviesService) {
 
-  }
-
-  theProperty: string = "";
-  theList: any[];
+  }                         
+  movieList: Observable<any>;
 
   ngOnInit() {
       console.log("Movies Component Constructed");
-      this.theList = this.moviesService.movies;      
-      this.theProperty = this.moviesService.theThing;
+      this.movieList = this.moviesService.getMovieList();
+      console.log(this.movieList);
   }
 
 }

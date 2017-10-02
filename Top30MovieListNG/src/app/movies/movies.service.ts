@@ -1,19 +1,26 @@
 import { Injectable } from '@angular/core';
+import { Http, Headers, RequestOptions } from '@angular/http';
+import 'rxjs/add/operator/map';
+import { Movie } from './MovieModel';
+import { MoviePart } from './MovieModel'; 
+import { Observable } from "rxjs/Observable";
 
 @Injectable()
 export class MoviesService {
-          
-    movies: any[];
-    theThing: string = "";
-    constructor() {
+
+    private moviesUrl = '../data/movies.json';
+
+    private headers = new Headers({ 'Accept': 'application/json' });
+    private options = new RequestOptions({ headers: this.headers });      
+
+    constructor(private http: Http) {
         console.log("Movies Service Constructed");
-        this.movies = ["The Lord of the Rings", "The Matrix", "The Thin Red Line"];
-        console.log(this.movies);
-        this.theThing = "Foo";
+
     }
 
-    getMovieList() {
-        return this.movies;
+    getMovieList(): Observable<any> {
+        console.log("MoviesService.getMovieList() called");
+        return this.http.get(this.moviesUrl, this.options).map(m => m);
     }
 
 }
